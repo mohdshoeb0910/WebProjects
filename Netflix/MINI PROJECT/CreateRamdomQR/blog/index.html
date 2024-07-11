@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.product, .product-detail {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product img, .product-detail img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Amazon</h1>
+    </header>
+    <main>
+        <div class="product" id="product1">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$10.00</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$20.00</p>
+            <button onclick="addToCart('Product 2')">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Amazon</p>
+    </footer>
+    <header>
+        <h1>Product Detail</h1>
+    </header>
+    <main>
+        <div class="product-detail">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$10.00</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Amazon</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
